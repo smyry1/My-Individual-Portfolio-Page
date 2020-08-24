@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #00334e;
+  color: #f6f5f5;
+}
+
+.header h1 {
+  font-size: 80px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ee6f57;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f6f5f5;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #145374;
+  color:white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f6f5f5;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+/*Fade in Overlay 1*/
+.container {
+  position: relative;
+  width: 80%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ee6f57;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+ul.a {
+  list-style-type: circle;
+}
+h3{font-size:20px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Individual Portfolio Page</h1>
+  <p>It's me, Rhea.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">About me</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact me</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>HELLO?</h5>
+    <div class="container">
+    <img src="img_avatar.png" alt="Avatar" class="image">
+    <div class="overlay">
+    <div class="text">Rhea Yi</div>
+  </div>
+</div>
+
+    <h3 class="text-uppercase">What I love</h3>
+    <p>Here are some of my favorite things to do:</p>
+    <ul class="a">
+  <li>Travel</li>
+  <li>Image editing (junior designer)</li>
+  <li> Video editing (learning)</li>
+  <li> Cycling and driving</li>
+</ul>
+
+        <h3 class="text-uppercase">Contact with me</h3>
+        <p>Email me:rhea.y1015@gmail.com </p>
+      </div>
+
+  </div>
+  
+  
+  <div class="main">
+    <h2>Portfolio</h2>
+    <h5>The website of our group, group 3, please click there:
+    <a href="http://ackermand.github.io/CC/">link</a>
+    </h5>
+    <p>We hope to use our website Career Castle to make more emerging professions known and familiar, so as to mitigate unequal access to employment information and unfair Career perceptions and discrimination.</p>
+    <br>
+    
+</div>
+
+<div class="footer">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="http://ackermand.github.io/CC/"> CareerCastle.com</a>
+  </div>
+  <!-- Copyright -->
+
+
+</div>
+
+</body>
+</html>
